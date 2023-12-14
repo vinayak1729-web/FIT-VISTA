@@ -91,7 +91,7 @@ Firebase: https://firebase.google.com/
 
 ### contributors
 
-Vinayak shinde
-vishal mishra 
-pratiksha kamble 
-kajal shah
+-Vinayak shinde
+-vishal mishra 
+-pratiksha kamble 
+-kajalkumari shah
