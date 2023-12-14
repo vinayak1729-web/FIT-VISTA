@@ -1,0 +1,97 @@
+/* Resetting default body margin and padding */
+body {
+  padding: 0;
+  margin: 0;
+}
+/* Setting dimensions and stacking order for specific elements */
+html,
+body,
+#tracker {
+  height: 100%;
+  width: 100vw;
+  z-index: 0;
+}
+
+/* Center-aligning buttons */
+.center-buttons {
+  text-align: center;
+  height: 30px;
+  padding-top: 5px;
+}
+
+/* Styles for buttons */
+.button {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border: gray;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Different button styles based on class */
+.button.start {
+  background-color: #4cd137;
+}
+
+.button.stop {
+  background-color: #e8562a;
+}
+
+.button.pause {
+  background-color: #ffc312;
+}
+
+/* Styles for a message console */
+.message-console {
+  position: absolute;
+  width: 100%;
+  background-color: #535c68;
+  color: #fff;
+  font-size: 10px;
+}
+
+/* Controls' positioning at specific locations on the screen */
+.track-control {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.log-control {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+.meter-control {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+}
+
+.meter-look {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+/* Styles for a glowing effect */
+.glow {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* Keyframes for the glowing animation */
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #6ab04c, 0 0 40px #6ab04c, 0 0 50px #6ab04c, 0 0 60px #6ab04c, 0 0 70px #6ab04c;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #badc58, 0 0 40px #badc58, 0 0 50px #badc58, 0 0 60px #badc58, 0 0 70px #badc58, 0 0 80px #badc58;}}

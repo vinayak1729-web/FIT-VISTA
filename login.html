@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>mindvista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+
+         
+    <div class="container">
+        <img src="images/fit.jpeg" style="    aspect-ratio: 1/1;
+        height: 150px;
+        width: 150px;" alt="">
+        <h1><B>LOGIN</B></h1>
+        <form action="" id="loginForm" class="loginForm">
+            <div class="alert">login successful!!!</div>
+            <div class="inputBox">
+                <input type="name" id="nameInput" oninput="showEnteredName()" placeholder="Enter your name " />
+            </div><br>
+            <div class="inputBox">
+                <input type="email" id="emailid" placeholder="Your Email....." />
+            </div><br>
+            <div class="inputBox">
+                <input type="password" id="password" placeholder="Your password...." />
+            </div>
+            <br>
+            <div class="inputBox">
+                <button type="submit"style="text-align: center;justify-content: center;margin-left: auto;margin-right: auto;border: 0;color:white; background-color: blueviolet;padding: 5px; cursor: pointer;">login</button>
+            </div>
+            <p>Don't have an account? <a href="index.html">Sign Up</a></p>
+
+        </form>
+    </div>
+
+
+    <script>
+        function showEnteredName() {
+            // Get the value entered by the user
+            var userName = document.getElementById("nameInput").value;
+
+            // Display the entered name on the page
+            document.getElementById("displayArea").innerText = "Hiii " + userName  +" " +" Welcome to FIT-VISTA";
+        }
+    </script>
+
+   
+        <div class="navigationbar">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navigation">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="login.html"><b>FIT-VISTA</b></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="https://mediafiles.botpress.cloud/aa582a52-50e3-48fa-9772-87db9d60e0dc/webchat/bot.html">CHATBOT</a>
+                            </li>
+        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    TRACK EXERCISE
+                                </a>
+        
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="excersisetrack.html">WORKOUT TRACKER</a></li>
+                                    <li><a class="dropdown-item" href="running.html">RUNNING TRACKER</a></li>
+                                    <li><a class="dropdown-item" href="https://aiworkout.live/">AI WORKOUT TRACKER</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    CALCULATOR
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="calorie.html">CALORIE CALCULATOR</a></li>
+                                    <li><a class="dropdown-item" href="bmi.html">BMI CALCULATOR</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <br><br>
+        <div class="main">
+    <div id="displayArea"></div>
+  <br><br> 
+ <div class="fitvistadata">
+    <div class="carddata">
+        <div id="hello"><iframe src="https://lottie.host/embed/116a464e-dca8-4343-a04c-d22fdb7ec5cc/1YolhOCq48.json"style="width: 300px; height: 300px; aspect-ratio: 1/1;"></iframe></div>
+        <div class="card-body">
+          
+        </div>
+      </div>
+    <p class="fitvista-text">
+        FitVista is a web application designed to track your workouts, including exercises, running, Our platform features a daily mood tracker with accompanying remedies. Additionally, we provide a chatbot created on Botpress to assist users with any confusion related to their diet.
+    </p>
+
+ </div>
+<div class="minvistaaservices">
+    <button class="start-button" style="  color: white;
+    background-color: blueviolet;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;" onclick="start()">Let's Start</button>
+</div><br>
+<br>
+<div class="otherservices">
+    <div class="minvistaaservices">
+        <button class="start-button" style="  color: white;
+        background-color: blueviolet;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;"onclick="chatbot()" >Any health related querry??</button>
+    </div>
+    <div class="minvistaaservices">
+        <button class="start-button" style="  color: white;
+        background-color: blueviolet;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;"><a href="Feel-Well-Web-App-main/happyspace.html" style="color: aliceblue;">feeling different , wanna track mood??</a></button>
+    </div>
+</div>
+</div>
+
+    </div>
+    </div>
+   
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="login.js" defer></script>
+    <script>
+ function start() {
+
+    window.location.href = 'excersisetrack.html';
+}
+
+function chatbot(){
+    window.location.href = 'https://mediafiles.botpress.cloud/aa582a52-50e3-48fa-9772-87db9d60e0dc/webchat/bot.html';
+}
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>

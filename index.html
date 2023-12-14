@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>FITVISTA</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+                body {
+            text-align: center; /* Center align the content */
+        }
+
+   
+    </style>
+</head>
+
+<body>
+ 
+    <div class="container">
+        <img src="images/fit.jpeg" style="    aspect-ratio: 1/1;
+        height: 150px;
+        width: 150px;" alt="">
+        <h1><B>SIGN-UP</B></h1>
+        <form action="" id="contactForm">
+            <div class="alert">sign up succesful!!</div>
+
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Your name...." /><br>
+            </div><br>
+            <div class="inputBox">
+                <input type="number" id="age" placeholder="Your age...." /><br>
+            </div><br>
+            <div class="inputBox">
+                <input type="email" id="emailid" placeholder="Your Email....." /><br>
+            </div><br>
+            <div class="inputBox">
+                <input type="password" id="password" placeholder="Your password must be of 6 digits...." /><br>
+            </div>
+<br>
+            <div class="button">
+                <button type="submit" style="text-align: center;justify-content: center;margin-left: auto;margin-right: auto;border: 0;color:white; background-color: blueviolet;padding: 5px; cursor: pointer;">Sign up</button>
+                <br>  <b>existing user?? login </b>
+            <button onclick="redirect()"style="text-align: center;justify-content: center;margin-left: auto;margin-right: auto;border: 0;color:white; background-color: blueviolet;padding: 5px; cursor: pointer;">login</a></button></div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script>
+    <script src="./mail.js"></script>
+    <script>
+
+       function redirect(){
+
+            window.location.href = "login.html";
+        }
+    </script>
+  </body>
+  </html>

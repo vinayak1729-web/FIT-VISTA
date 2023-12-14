@@ -1,0 +1,649 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Tracker</title>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="extrac.css">
+  <!-- Add this line to include the Lottie library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="navigationbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="login.html"><b>FIT-VISTA</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://mediafiles.botpress.cloud/aa582a52-50e3-48fa-9772-87db9d60e0dc/webchat/bot.html">CHATBOT</a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                TRACK EXERCISE
+                            </a>
+    
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="exercisetrack.html">WORKOUT TRACKER</a></li>
+                                <li><a class="dropdown-item" href="running.html">RUNNING TRACKER</a></li>
+                                <li><a class="dropdown-item" href="https://aiworkout.live/">AI WORKOUT TRACKER</a></li>
+                            </ul>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                CALCULATOR
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="calorie.html">CALORIE CALCULATOR</a></li>
+                                <li><a class="dropdown-item" href="bmi.html">BMI CALCULATOR</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div><br><br><br>
+<br><br>
+
+        <!-- Container for exercise options -->
+        <div class="whichexcersize" style="margin-left: auto;
+        margin-right: auto;">
+          <h1>WHICH EXERCISE DO YOU WANT???</h1><br><br>
+
+           <!-- Button for Strength Training -->
+          <button style="  color: white;
+          background-color: blueviolet;
+          padding: 10px 20px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;" class="strengthbtn" onclick="strength()">Strength traning?</button>
+          
+          <!-- Button for Stamina Training -->
+          or <button style="  color: white;
+          background-color: blueviolet;
+          padding: 10px 20px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;" class="staminabtn" onclick="stamina()">Stamina traning?</button><br><br><br>
+        </div>
+
+        <!-- Section for Strength Training Exercises -->
+<div class="strength">
+<h2>THIS ARE SOME BEST STRENGTH TRAINING EXERCISE..</h2>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <div id="lottie-container">
+
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">DEADLIFT</h5>
+        <p class="card-text">Lifting a barbell from the ground to a standing position, engaging multiple muscles, especially in the back and legs.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div id="squats" class="card-body d-flex justify-content-center align-items-center">
+        <iframe src="https://lottie.host/embed/f925a7d7-6638-400a-9ec1-e089a1be6d3d/RYNkJMgYHa.json"style="width: 380px; height: 380px; aspect-ratio: 1/1;"></iframe>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">SQUATS</h5>
+        <p class="card-text">Lowering body into a seated position and returning to a standing position to target lower body muscles.</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="col">
+    <div class="card">
+      <div id="bench">
+        <iframe src="https://lottie.host/embed/2343b0ca-9bb0-42d4-bf3f-e9bfe2698df7/vK4Jvf3uMD.json" style="width: 380px; height: 380px; aspect-ratio: 1/1;"></iframe>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">BENCHPRESS</h5>
+        <p class="card-text">Pressing a barbell away from the chest while lying on a flat bench, emphasizing chest, shoulder, and triceps strength.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div id="pullup">
+        <iframe src="https://lottie.host/embed/f15db049-c7c3-4a94-b439-43cefda97a83/yBmRnGVY7M.json"style="width: 380px; height: 380px; aspect-ratio: 1/1;"></iframe>></iframe>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">PULL-UPS</h5>
+        <p class="card-text">Lifting the body upward by pulling up on a horizontal bar, primarily targeting the upper back and arms.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div id="pushups"><iframe src="https://lottie.host/embed/b0da23f5-1714-4411-8d93-248feaec6daa/opZOQgNy7M.json"style="width: 380px; height: 380px; aspect-ratio: 1/1;"></iframe></div>
+      <div class="card-body">
+        <h5 class="card-title">PUSH-UPS</h5>
+        <p class="card-text">Raising and lowering the body by pushing up from and lowering down to a plank position, engaging chest, shoulders, and triceps.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+     <div id="planks"><iframe src="https://lottie.host/embed/d8aef0b4-f540-45e4-bd07-992458b88896/8xcTRADs1U.json"style="width: 380px; height: 380px; aspect-ratio: 1/1;"></iframe></div>
+      <div class="card-body">
+        <h5 class="card-title">PLANKS</h5>
+        <p class="card-text">Holding a push-up position with the body in a straight line, engaging core muscles for stability and strength.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="stamina">
+  <H2>THIS ARE SOME BEST STAMINA BUILDING EXCERSIZES</H2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <div id="lottie-container">
+            <iframe src="https://lottie.host/embed/6fbfd656-5200-4231-846b-d592998708df/d6VmQ9qfoO.json"style="width: 380px; height: 380px; aspect-ratio: 1/1;"></iframe>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">RUNNING/JOGGING</h5>
+            <p class="card-text">Running and jogging are excellent cardiovascular exercises that can significantly improve stamina.
+              .
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div id="CYCLING" class="card-body d-flex justify-content-center align-items-center">
+            <iframe src="https://lottie.host/embed/9825b749-cdb8-4428-8810-c2c198f31886/MA6ZJhVWQZ.json"style="width: 380px; height: 380px; aspect-ratio: 1/1;"></iframe>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">CYCLING</h5>
+            <p class="card-text">Cycling, whether on a stationary bike or outdoors, is a low-impact exercise that enhances cardiovascular endurance.</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="col">
+        <div class="card">
+          <div id="bench">
+            <iframe src="https://lottie.host/embed/16686c14-f8cc-45c5-848d-d1a1a72f9de9/sOnEkLMtbQ.json"style="width: 380px; height: 380px; aspect-ratio: 1/1;"></iframe>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">JUMP ROPE</h5>
+            <p class="card-text">Jumping rope is a simple yet highly effective exercise for building stamina.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div id="pullup">
+            <iframe src="https://lottie.host/embed/7d96ce5a-c75f-4fb6-b35a-53a0b7b65e32/NfFjixgyBK.json"style="width: 380px; height: 380px; aspect-ratio: 1/1;"></iframe>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">SWIMMING</h5>
+            <p class="card-text">Swimming is a full-body workout that builds endurance and strength.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div id="pushups"><iframe src="https://lottie.host/embed/420abb3a-08bb-4f69-be08-d6cb4dab796e/eg2LT6meCJ.json" style="width: 380px; height: 380px; aspect-ratio: 1/1;"></iframe></div>
+          <div class="card-body">
+            <h5 class="card-title">BURPEES</h5>
+            <p class="card-text">Burpees are a compound exercise that combines strength and cardiovascular training.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+         <div id="planks"><iframe src="https://lottie.host/embed/c85770b4-ffa5-43e2-82fc-442607aa2640/x4Q5Lieutj.json"style="width: 380px; height: 380px; aspect-ratio: 1/1;"></iframe></div>
+          <div class="card-body">
+            <h5 class="card-title">BOXING</h5>
+            <p class="card-text">Boxing workouts, including shadowboxing and heavy bag training, are intense and excellent for building stamina, agility, and coordination..</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>     
+        
+        <div class="header d-flex justify-content-center align-items-center">
+          <h2 style="color: blueviolet; margin-top: 20px; font-weight: bold;">TRACK YOUR WORKOUT HERE!!!!</h2>
+      </div>
+      
+<!-- Your HTML form goes here -->
+<form id="workout-form">
+  <label for="workout-type">Workout Type:</label>
+  <select id="workout-type">
+    <option value="strength">Strength</option>
+    <option value="cardio">Cardio</option>
+  </select>
+
+  <!-- Strength Fields -->
+  <div id="strength-fields">
+    <label for="exercise">Exercise:</label>
+    <input type="text" id="exercise" placeholder="Exercise">
+
+    <label for="sets">Sets:</label>
+    <input type="number" id="sets" placeholder="Sets">
+
+    <label for="reps">Reps:</label>
+    <input type="number" id="reps" placeholder="Reps">
+
+    <label for="weight">Weight:</label>
+    <input type="number" id="weight" placeholder="Weight">
+  </div>
+
+  <!-- Cardio Fields -->
+  <div id="cardio-fields">
+    <label for="exercise-cardio">Exercise:</label>
+    <input type="text" id="exercise-cardio" placeholder="Exercise">
+
+    <label for="sets-cardio">Sets:</label>
+    <input type="number" id="sets-cardio" placeholder="Sets">
+
+    <label for="reps-cardio">Reps:</label>
+    <input type="number" id="reps-cardio" placeholder="Reps">
+
+    <label for="duration-cardio">Duration (mins):</label>
+    <input type="number" id="duration-cardio" placeholder="Duration">
+
+    <label for="distance-cardio">Distance (km):</label>
+    <input type="number" id="distance-cardio" placeholder="Distance">
+  </div>
+
+  <label for="durationStrength">Duration Strength:</label>
+  <input type="number" id="durationStrength" placeholder="Duration Strength">
+
+  <label for="date">Date:</label>
+  <input type="date" id="date" placeholder="Date">
+
+  <button type="button" id="add-workout">Add Workout</button><br><br>
+  <button type="button" id="save-to-json">Save to device</button><br><br>
+  <button type="button" id="load-from-json">Load from device</button><br>
+</form>
+
+<!-- Display past workouts -->
+<h2>Past Workouts</h2>
+<ul id="workout-list"></ul>
+
+<!-- Buttons for saving and loading workouts -->
+<br><br><br>
+
+<div class="makeachart">
+<h2 style="color: blueviolet;">  SEE YOUR EFFORTS & STATS</h2>
+  <input type="file" id="fileInput" accept=".json"
+style="  color: white;
+background-color: blueviolet;
+width: 30%;
+font-size: 16px;
+border: none;
+cursor: pointer;
+justify-content: center;
+align-items: center;
+border-radius: 5px;" />
+    
+<div class="chart-container">
+    <canvas id="repsChart" width="400" height="200"></canvas>
+</div>
+<div class="chart-container">
+    <canvas id="durationChart" width="400" height="200"></canvas>
+</div>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const workoutList = [];
+  const workoutTypeSelect = document.getElementById('workout-type');
+  const exerciseSelect = document.getElementById('exercise');
+  const setsInput = document.getElementById('sets');
+  const repsInput = document.getElementById('reps');
+  const weightInput = document.getElementById('weight');
+  const durationInput = document.getElementById('duration');
+  const distanceInput = document.getElementById('distance');
+  const durationStrengthInput = document.getElementById('durationStrength');
+  const dateInput = document.getElementById('date');
+  const addWorkoutButton = document.getElementById('add-workout');
+  const workoutListEl = document.getElementById('workout-list');
+  const staminaElement = document.querySelector(".stamina");
+  const strengthElement = document.querySelector(".strength");
+
+  function stamina() {
+    staminaElement.style.display = "block";
+    strengthElement.style.display = "none";
+  }
+
+  function strength() {
+    strengthElement.style.display = "block";
+    staminaElement.style.display = "none";
+  }
+
+  // Attach click event listeners to your buttons
+  document.querySelector(".staminabtn").addEventListener('click', stamina);
+  document.querySelector(".strengthbtn").addEventListener('click', strength);
+  function updateFields() {
+    const type = workoutTypeSelect.value;
+    const strengthFields = document.getElementById('strength-fields');
+    const cardioFields = document.getElementById('cardio-fields');
+
+    strengthFields.style.display = type === 'strength' ? 'block' : 'none';
+    cardioFields.style.display = type === 'cardio' ? 'block' : 'none';
+  }
+
+  function addWorkout() {
+    const type = workoutTypeSelect.value;
+    const name = type === 'strength' ? exerciseSelect.value : document.getElementById('exercise-cardio').value;
+    const sets = type === 'strength' ? parseInt(setsInput.value) : parseInt(document.getElementById('sets-cardio').value);
+    const reps = type === 'strength' ? parseInt(repsInput.value) : parseInt(document.getElementById('reps-cardio').value);
+    const weight = type === 'strength' ? parseInt(weightInput.value) : undefined;
+    const duration = type === 'cardio' ? parseInt(durationInput.value) : parseInt(document.getElementById('duration-cardio').value);
+    const distance = type === 'cardio' ? parseInt(distanceInput.value) : parseInt(document.getElementById('distance-cardio').value);
+    const durationStrength = parseInt(durationStrengthInput.value);
+    const date = dateInput.value;
+
+    const workout = {
+      type,
+      name,
+      sets,
+      reps,
+      weight,
+      duration,
+      distance,
+      durationStrength,
+      date,
+    };
+
+    workoutList.push(workout);
+
+    const workoutListItem = document.createElement('li');
+    workoutListItem.textContent = `${workout.name}: ${workout.sets} sets, ${workout.reps} reps, ${workout.weight || workout.distance} kg/km, ${workout.duration || workout.durationStrength} mins, Date: ${workout.date}`;
+    workoutListEl.appendChild(workoutListItem);
+
+    saveToDatabase(workoutList);
+    updateCharts(workoutList);
+    clearInputFields();
+  }
+
+  function updateCharts(data) {
+    const exerciseLabels = [];
+    const timeData = [];
+    const dateData = {};
+
+    data.forEach((workout) => {
+      exerciseLabels.push(workout.name);
+      timeData.push(workout.duration || workout.durationStrength || 0);
+
+      const workoutDate = workout.date;
+      if (!dateData[workoutDate]) {
+        dateData[workoutDate] = {};
+      }
+      dateData[workoutDate][workout.name] = workout.sets * workout.reps;
+    });
+
+    createOrUpdateChart('exerciseTimeChart', 'bar', exerciseLabels, timeData, 'Exercise vs Time');
+    createOrUpdateDateVsExerciseChart('dateExerciseChart', dateData, exerciseLabels, 'Date vs Exercise');
+  }
+
+  function createOrUpdateChart(chartId, chartType, labels, data, title) {
+    const ctx = document.getElementById(chartId).getContext('2d');
+
+    if (window[chartId]) {
+      window[chartId].destroy();
+    }
+
+    window[chartId] = new Chart(ctx, {
+      type: chartType,
+      data: {
+        labels: labels,
+        datasets: [{
+          label: title,
+          data: data,
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1,
+        }],
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    });
+  }
+
+
+  // Function to create or update a bar chart displaying workout data over different dates
+  function createOrUpdateDateVsExerciseChart(chartId, dateData, exerciseLabels, title) {
+    const ctx = document.getElementById(chartId).getContext('2d');
+
+    if (window[chartId]) {
+      window[chartId].destroy();
+    }
+
+    window[chartId] = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: Object.keys(dateData),
+        datasets: exerciseLabels.map((exercise, index) => ({
+          label: exercise,
+          data: Object.values(dateData).map((workout) => workout[exercise] || 0),
+          backgroundColor: `rgba(${index * 50}, 75, 192, 0.2)`,
+          borderColor: `rgba(${index * 50}, 75, 192, 1)`,
+          borderWidth: 1,
+        })),
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    });
+  }
+
+  function saveToDatabase(data) {
+    localStorage.setItem('workoutData', JSON.stringify(data));
+  }
+
+  function clearInputFields() {
+    setsInput.value = '';
+    repsInput.value = '';
+    weightInput.value = '';
+    durationInput.value = '';
+    distanceInput.value = '';
+    durationStrengthInput.value = '';
+    dateInput.value = '';
+  }
+
+  function saveToJSON(data) {
+    const jsonData = JSON.stringify(data);
+    const blob = new Blob([jsonData], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'workout_data.json';
+    a.click();
+  }
+
+  function loadFromJSON() {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+
+    input.addEventListener('change', function(event) {
+      const file = event.target.files[0];
+
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const jsonData = JSON.parse(e.target.result);
+          displayLoadedData(jsonData);
+        };
+        reader.readAsText(file);
+      }
+    });
+
+    input.click();
+  }
+
+  function displayLoadedData(data) {
+    const loadedDataContainer = document.getElementById('loaded-data-container');
+    loadedDataContainer.innerHTML = '';
+
+    data.forEach((workout) => {
+      const workoutItem = document.createElement('div');
+      workoutItem.textContent = `${workout.name}: ${workout.sets} sets, ${workout.reps} reps, ${workout.weight || workout.distance} kg/km, ${workout.duration || workout.durationStrength} mins, Date: ${workout.date}`;
+      loadedDataContainer.appendChild(workoutItem);
+    });
+  }
+
+  // Event listeners
+  updateFields();
+  workoutTypeSelect.addEventListener('change', updateFields);
+  addWorkoutButton.addEventListener('click', addWorkout);
+
+  document.getElementById('save-to-json').addEventListener('click', function() {
+    saveToJSON(workoutList);
+  });
+
+  // Event listener to load data from a JSON file
+  document.getElementById('load-from-json').addEventListener('click', function() {
+    loadFromJSON();
+  });
+});
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Specify the path to your Lottie JSON file
+    const animationPath = 'deadlift.json'; // Replace with the actual path
+
+    // Optional configuration parameters
+    const animationContainer = document.getElementById('lottie-container');
+    const anim = lottie.loadAnimation({
+      container: animationContainer,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: animationPath,
+    });
+    lottie.loadAnimation(animationOptions);
+    const animationOptions = {
+      container: document.getElementById(''),
+      renderer: 'svg', // Use 'svg' or 'canvas' based on your preference
+      loop: true,
+      autoplay: true,
+      path: 'path/to/deadlift-animation.json', // Replace with the actual path
+    };
+
+  });
+
+
+
+        document.getElementById('fileInput').addEventListener('change', handleFileSelect);
+
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const data = JSON.parse(e.target.result);
+                    generateCharts(data);
+                };
+                reader.readAsText(file);
+            }
+        }
+
+        function generateCharts(data) {
+            const repsData = {};
+            const durationData = {};
+
+            data.forEach(entry => {
+                const keyReps = entry.name;
+                if (entry.reps) {
+                    if (!repsData[keyReps]) {
+                        repsData[keyReps] = [];
+                    }
+                    repsData[keyReps].push(entry.reps);
+                }
+
+                const keyDuration = entry.type + '-' + entry.name;
+                if (entry.duration) {
+                    if (!durationData[keyDuration]) {
+                        durationData[keyDuration] = [];
+                    }
+                    durationData[keyDuration].push(entry.duration);
+                }
+            });
+
+            renderChart('repsChart', 'Reps', repsData, 'Exercise vs Reps');
+            renderChart('durationChart', 'Duration (minutes)', durationData, 'Duration vs Type');
+        }
+
+        function renderChart(canvasId, yAxisLabel, data, xAxisLabel) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+
+            const labels = Object.keys(data);
+            const datasets = labels.map(label => ({
+                label: label,
+                data: data[label],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }));
+
+            const chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: datasets
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: yAxisLabel
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: xAxisLabel
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
