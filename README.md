@@ -9,7 +9,7 @@ features for tracking workouts, nutrition, and overall well-being.
 ### How Fit-Vista Works (WORK FLOW) : 
 
 Intuitive Workflow:
-Effortless Onboarding: Sign up or sign in quickly to access your personalized fitness haven.
+Effortless Onboarding: Sign up or sign in quickly to access your personalized fitness haven. during signup enter a password of 6 or more than 6 characters
 
 Navigation Made Easy: A user-friendly navigation bar guides you through the app's core features
 
@@ -47,6 +47,8 @@ Our project is a comprehensive fitness tracking system that integrates various f
 ### Goals and Objectives:
 The aim is to have a working prototype that demonstrates the successful integration of these components, providing users with a comprehensive fitness tracking solution that goes beyond basic metrics and actively supports their health and wellness journey.
 
+### Limitations
+it is not much responsive on mobiles , we are working on it.
 
 ### Technologies Used:
 Programming Languages:
