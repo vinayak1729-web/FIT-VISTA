@@ -1,11 +1,12 @@
-body {
+ body {
+  
     display: block;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin-right: auto;
   margin-left: auto;
-    font-family: Arial, sans-serif;
+  font-family: 'Poppins';
     background-color: #faf0fd;
   }
   
