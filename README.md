@@ -43,6 +43,21 @@ Progress Tracking: Monitor your progress with detailed data and insightful repor
 ### Project Description:
 Our project is a comprehensive fitness tracking system that integrates various features to help users achieve their health and wellness goals like -> Running tracker , AI Bot , Mood Tracker , Exercise tracker that can store data and from past data user can see his statictis in the form of chart , Workout history and analytics , live exercise detection and monitoring .  
 
+- Images 
+  
+![sign-up](images/signup.png)
+![login](images/login.png)
+![home page](images/homepage.png)
+![excersize tracker](images/excersizetrack.png)
+![mood tracker](images/moodtracker.png)
+![Running Tracker](images/running.png)
+![ai fitness tracker](images/aitracker.png)
+![calorie calculator](images/calorie%20calculator.png)
+![bmi calculator](bmi%20calculator.png)
+![chatbot](images/chatbot.png)
+ 
+ rest all images are present in images folder
+
 
 ### Goals and Objectives:
 The aim is to have a working prototype that demonstrates the successful integration of these components, providing users with a comprehensive fitness tracking solution that goes beyond basic metrics and actively supports their health and wellness journey.
@@ -93,7 +108,7 @@ Firebase: https://firebase.google.com/
 
 ### contributors
 
--Vinayak shinde
--vishal mishra 
--pratiksha kamble 
--kajalkumari shah
+- Vinayak shinde
+- vishal mishra 
+- pratiksha kamble 
+- kajalkumari shah
