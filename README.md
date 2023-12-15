@@ -53,7 +53,7 @@ Our project is a comprehensive fitness tracking system that integrates various f
 ![Running Tracker](images/running.png)
 ![ai fitness tracker](images/aitracker.png)
 ![calorie calculator](images/calorie%20calculator.png)
-![bmi calculator](bmi%20calculator.png)
+![bmi calculator](bmi.png)
 ![chatbot](images/chatbot.png)
  
  rest all images are present in images folder
